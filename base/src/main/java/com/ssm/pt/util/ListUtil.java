@@ -20,7 +20,7 @@ public class ListUtil {
 	 * 
 	 * @param list
 	 * @return
-	 * @author 曾声亮
+	 * @author 
 	 * @date 2016年9月9日
 	 * @version 1.0
 	 */
