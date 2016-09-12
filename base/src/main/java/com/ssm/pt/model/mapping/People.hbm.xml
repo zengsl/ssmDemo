@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-28 15:22:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.ssm.pt.model">
+
+	<class name="People" table="People">
+
+		<id name="fdId" type="java.lang.String">
+			<column name="fd_id" />
+			<generator class="uuid" />
+		</id>
+
+		<property name="fdName" type="java.lang.String" length="50">
+			<column name="fd_name" />
+		</property>
+
+	</class>
+</hibernate-mapping>
