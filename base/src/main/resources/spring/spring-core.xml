@@ -11,6 +11,7 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">  
     <!-- 自动扫描 -->  
     <context:component-scan base-package="com.ssm.pt" />  
+    
     <!-- 引入配置文件 -->
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -100,5 +101,16 @@
         class="org.springframework.jdbc.datasource.DataSourceTransactionManager">  
         <property name="dataSource" ref="dataSource" />  
     </bean>   -->
-  
+  <bean id="dynamicSql" class="com.ssm.pt.test.velocity.DynamicSql">  
+        <property name="dynamicStatement">
+			<ref bean="dynamicStatement" />
+		</property>
+    </bean>  
+  <bean id="dynamicStatement" class="com.ssm.pt.builder.imp.DynamicStatementBase">  
+         <property name="fileNames" >  
+          <list>
+	            <value>classpath:spring/test.xml</value>
+	        </list>
+        </property>
+    </bean>  
 </beans>  

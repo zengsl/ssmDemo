@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.ssm.pt.common.controller.BaseControllerImp;
 import com.ssm.pt.model.User;
 import com.ssm.pt.service.IUserService;
 
@@ -16,7 +17,7 @@ import com.ssm.pt.service.IUserService;
  */
 @Controller  
 @RequestMapping("/user")  
-public class UserController {  
+public class UserController extends BaseControllerImp{  
     @Resource  
     private IUserService userService;  
       

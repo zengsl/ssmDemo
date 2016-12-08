@@ -58,6 +58,6 @@ public class TestMyBatis extends SpringTestCase{
 			e.printStackTrace();
 		}*/
     	
-    	Assert.assertEquals(-1%2, 1);
+//    	Assert.assertEquals(-1%2, 1);
     }  
 }

@@ -1,3 +1,4 @@
+package com.ssm.pt.util;
 /*package com.cn.zsl.util;
 
 import java.util.Calendar;
@@ -9,7 +10,7 @@ import java.util.Locale;
  *
  *//*
 *//**
- * ÈÕÆÚ×ª»»Àà ×ª»»Ò»¸ö java.util.Date ¶ÔÏóµ½Ò»¸ö×Ö·û´®ÒÔ¼° Ò»¸ö×Ö·û´®µ½Ò»¸ö java.util.Date ¶ÔÏó.
+ * ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ ×ªï¿½ï¿½Ò»ï¿½ï¿½ java.util.Date ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ java.util.Date ï¿½ï¿½ï¿½ï¿½.
  *//*
 public class DateUtil {
 	public static final long SECOND = 1000;
@@ -52,11 +53,11 @@ public class DateUtil {
 			TYPE_TIME };
 
 	*//**
-	 * ½«×Ö·û´®×ª»»ÎªDateÀàÐÍ
+	 * ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªDateï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param strDate
 	 * @param pattern
-	 *            ¸ñÊ½
+	 *            ï¿½ï¿½Ê½
 	 * @return
 	 * @throws ParseException
 	 *//*
@@ -74,11 +75,11 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«×Ö·û´®×ª»»ÎªDateÀàÐÍ
+	 * ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªDateï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param strDate
 	 * @param type
-	 *            ¼û±¾ÀàÖÐµÄTYPE_*³£Á¿
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½TYPE_*ï¿½ï¿½ï¿½ï¿½
 	 * @param locale
 	 * @return
 	 * @throws ParseException
@@ -108,11 +109,11 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«Date×ª»»Îª×Ö·û´®
+	 * ï¿½ï¿½Date×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½
 	 * 
 	 * @param aDate
 	 * @param pattern
-	 *            ¸ñÊ½
+	 *            ï¿½ï¿½Ê½
 	 * @return
 	 *//*
 	public static String convertDateToString(Date aDate, String pattern) {
@@ -125,11 +126,11 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«Date×ª»»Îª×Ö·û´®
+	 * ï¿½ï¿½Date×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½
 	 * 
 	 * @param aDate
 	 * @param type
-	 *            ¼û±¾ÀàÖÐµÄTYPE_*³£Á¿
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½TYPE_*ï¿½ï¿½ï¿½ï¿½
 	 * @param locale
 	 * @return
 	 *//*
@@ -144,12 +145,12 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«ÈÕÆÚ¡¢Ê±¼äºÏ²¢³É³¤ÕûÐÍÊý¾Ý
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½Ê±ï¿½ï¿½Ï²ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param date
-	 *            ÈÕÆÚ
+	 *            ï¿½ï¿½ï¿½ï¿½
 	 * @param time
-	 *            Ê±¼ä
+	 *            Ê±ï¿½ï¿½
 	 * @return
 	 *//*
 	public static long getDateTimeNumber(Date date, Date time) {
@@ -163,7 +164,7 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«ÈÕÆÚµÄÊ±¼ä²¿·ÖÇå³ýºó£¬×ª»»³ÉlongÀàÐÍ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ê±ï¿½ä²¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½longï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param date
 	 * @return
@@ -173,7 +174,7 @@ public class DateUtil {
 	}
 
 	*//**
-	 * »ñÈ¡ÈÕÆÚ(»ñÈ¡µ±ÌìÈÕÆÚgetDate(0))
+	 * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getDate(0))
 	 * 
 	 * @param day
 	 * @return
@@ -189,7 +190,7 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«Ê±¼äµÄÈÕÆÚ²¿·ÖÇå³ýºó£¬×ª»»³ÉlongÀàÐÍ
+	 * ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½longï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param date
 	 * @return
@@ -199,7 +200,7 @@ public class DateUtil {
 	}
 
 	*//**
-	 * ½«Ò»¸ö²»°üº¬ÈÕÆÚµÄÊ±¼äÁ¿£¬×ª»»ÎªDateÀàÐÍ£¬ÆäÖÐµÄÈÕÆÚÎªµ±Ìì
+	 * ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªDateï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param l
 	 * @return
@@ -241,7 +242,7 @@ public class DateUtil {
 	}
 
 	*//**
-	 * »ñÈ¡µ±Ç°Ê±¼ä£¬²¢±£Ö¤ÔÚÍ¬Ò»Ïß³ÌÄÚºóÃæµ÷ÓÃµÄÊ±¼äÔÚÇ°Ãæµ÷ÓÃÖ®ºó£¨¼´±ãÍ¬Ò»ºÁÃëÄÚ£©
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Í¬Ò»ï¿½ß³ï¿½ï¿½Úºï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ó£¨¼ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½
 	 *//*
 	public static Date getDateQueue() {
 		long now = System.currentTimeMillis();

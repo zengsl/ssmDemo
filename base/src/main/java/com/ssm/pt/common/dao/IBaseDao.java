@@ -1,7 +1,5 @@
 package com.ssm.pt.common.dao;
 
-import java.io.Serializable;
-
 /**
  * @author asus
  *

@@ -1,8 +1,9 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/jsp/common/common.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <title>转盘</title>
 <style>
     *{padding:0;margin:0}
@@ -18,7 +19,7 @@
     .rotate-bg{
         width:509px;
         height:509px;
-        background:url(<%=request.getContextPath()%>/resource/picture/lottery/ly-plate.png);
+        background:url(${Context_Path}/resource/images/lottery/ly-plate.png);
         position:absolute;
         top:0;
         left:0
@@ -47,11 +48,11 @@
 <body>
     <div class="ly-plate">
         <div class="rotate-bg"></div>
-        <div class="lottery-star"><img src="<%=request.getContextPath()%>/resource/picture/lottery/rotate-static.png" id="lotteryBtn"></div>
+        <div class="lottery-star"><img src="${Context_Path}/resource/images/lottery/rotate-static.png" id="lotteryBtn"></div>
     </div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resource/js/jquery-1.7.2.min.js"></script>
-<script src="<%=request.getContextPath()%>/resource/js/jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="${Context_Path}/resource/js/jquery-1.7.2.min.js"></script>
+<script src="${Context_Path}/resource/js/jQueryRotate.2.2.js"></script>
 
 <script>
 $(function(){

@@ -1,0 +1,80 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from OI_CREDIT_LIMIT_CHGService WSDL service -->
+
+  <service name="OI_CREDIT_LIMIT_CHGPort" provider="java:RPC" style="document" use="literal">
+      <parameter name="wsdlTargetNamespace" value="urn:iwork.ecc.credit.controls"/>
+      <parameter name="wsdlServiceElement" value="OI_CREDIT_LIMIT_CHGService"/>
+      <parameter name="schemaUnqualified" value="urn:iwork.ecc.credit.controls"/>
+      <parameter name="wsdlServicePort" value="OI_CREDIT_LIMIT_CHGPort"/>
+      <parameter name="className" value="controls.credit.ecc.iwork.OI_CREDIT_LIMIT_CHGBindingSkeleton"/>
+      <parameter name="wsdlPortType" value="OI_CREDIT_LIMIT_CHG"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:>CREDIT_LIMIT_CHG_RESP>RETURN"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_RESPRETURN"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:>>CREDIT_LIMIT_CHG_RESP>RETURN>MESSAGES"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_RESPRETURNMESSAGESMESSAGE[]"
+        innerType="cmp-ns:>>>CREDIT_LIMIT_CHG_RESP>RETURN>MESSAGES>MESSAGE" xmlns:cmp-ns="urn:iwork.ecc.credit.controls"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:>>CREDIT_LIMIT_CHG_REQ>TEXTLINES>LINE"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_REQTEXTLINESLINE"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:>>>CREDIT_LIMIT_CHG_RESP>RETURN>MESSAGES>MESSAGE"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_RESPRETURNMESSAGESMESSAGE"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:>CREDIT_LIMIT_CHG_REQ>TEXTLINES"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_REQTEXTLINESLINE[]"
+        innerType="cmp-ns:>>CREDIT_LIMIT_CHG_REQ>TEXTLINES>LINE" xmlns:cmp-ns="urn:iwork.ecc.credit.controls"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:CREDIT_LIMIT_CHG_RESP"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_RESP"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="urn:iwork.ecc.credit.controls"
+        qname="ns:CREDIT_LIMIT_CHG_REQ"
+        type="java:controls.credit.ecc.iwork.CREDIT_LIMIT_CHG_REQ"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

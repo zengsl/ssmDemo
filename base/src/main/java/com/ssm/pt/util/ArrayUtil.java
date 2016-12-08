@@ -10,11 +10,11 @@ public final class ArrayUtil {
 	 * 插入排序
 	 * @return  
 	 * @author 曾声亮  	
-	 * @date 2016年9月7日
+	 * @date 2016年8月7日
 	 * @version 1.0
 	 * @param <T>
 	 */
-	public static void insertionSort(int[] targetArr){
+	public static void insertionSort(int[] targetArr) {
 		
 		for(int out = 1,size = targetArr.length; out < size; out++){
 			int tmp = targetArr[out];

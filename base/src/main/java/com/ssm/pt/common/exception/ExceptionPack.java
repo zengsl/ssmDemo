@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 异常容器，用于存储所有异常
- * @author 曾声亮
+ * @author Zengsl
  *
  */
 public class ExceptionPack extends Exception{

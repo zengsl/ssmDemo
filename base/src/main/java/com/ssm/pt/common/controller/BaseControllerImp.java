@@ -1,5 +1,8 @@
 package com.ssm.pt.common.controller;
 
+import java.beans.PropertyEditorSupport;
+import java.util.Date;
+
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
@@ -7,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 
@@ -65,5 +70,19 @@ public class BaseControllerImp implements IBaseController {
 		String LUI_ContextPath = request.getContextPath();
 		request.setAttribute("LUI_ContextPath", LUI_ContextPath);
 	}	
-	
+	/**
+	 * 处理参数类型转换的函数，可以在里面注册实现的转换器
+	 * @param binder  
+	 * @author Zengsl 	
+	 * @date 2016年9月28日
+	 * @version 1.0
+	 */
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {  
+	    binder.registerCustomEditor(Date.class, new PropertyEditorSupport(){
+	    	
+	    }); 
+	    // 如果需要，这里可以继续注册更多的 propertyEditor  
+	    // ......  
+	  }  
 }

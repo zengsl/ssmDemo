@@ -26,7 +26,6 @@ public class BaseDaoImp<Entity, PK extends Serializable> extends HibernateDaoSup
 	         * */
 	        ParameterizedType type = (ParameterizedType) getClass()
 	                .getGenericInterfaces()[0];
-	        
 	        /**
 	         * 获取实现接口的第一个泛型参数
 	         * */

@@ -21,7 +21,5 @@ public class People {
 	public void setFdName(String fdName) {
 		this.fdName = fdName;
 	}
-	
-	
 
 }
